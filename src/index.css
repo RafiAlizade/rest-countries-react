@@ -1,0 +1,35 @@
+:root {
+  --bg-color: hsl(0, 0%, 98%);
+  --text-color: #111517;
+  --searcing-icon-color: #848484;
+  --input-color: hsl(0, 0%, 52%);
+  --input-placeholder: hsl(0, 0%, 52%);
+  --input-bg-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --button-shadow-color: rgba(0, 0, 0, 0.1);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+:root > .dark-theme {
+  --bg-color: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+  --searcing-icon-color: #848484;
+  --input-color: hsl(0, 0%, 98%);
+  --input-placeholder: hsl(0, 0%, 75%);
+  --input-bg-color: hsl(209, 23%, 22%);
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --button-shadow-color: rgba(0, 0, 0, 0.29);
+}
+
+.container {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
