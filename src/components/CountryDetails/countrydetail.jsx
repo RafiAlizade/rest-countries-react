@@ -1,15 +1,10 @@
 import { useState, useEffect } from 'react';
-import './countrydetail.css'
+import './CountryDetail.css'
 import { Search , ChevronDown } from 'react-bootstrap-icons';
-import { Link , Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function CountryDetail() {
     const [array, setArr] = useState([]);
-    const [searchText, setSearchText] = useState('');
-
-    const handleTextChange = (event) => {
-        setSearchText(event.target.value);
-      };
 
     useEffect(function() {
         async function fetchData() {
@@ -139,7 +134,7 @@ function CountryDetail() {
 
                         <div className="countries__allbox">
                         {array.map((country, index) => (
-                           <Link to={`./${country.name.common}`} key={index}>
+                           <Link to={`./country/${country.name.common}`} key={index}>
                              <div className='country__box' id={country.name?.common} key={index}>
                                 <div className="country__image">
                                     <img src={country.flags?.svg} alt={country.name?.common} />

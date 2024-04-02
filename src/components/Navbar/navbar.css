@@ -21,7 +21,14 @@
     font-weight: 800;
 }
 
-.change__theme {
+.header__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header__right_change-mode {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,4 +38,26 @@
     border: none;
     outline: none;
     cursor: pointer;
+    color: var(--text-color);
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 520px) {
+    .header__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.7rem;
+    }
+    .header__h1 {
+      text-align: center;
+    }
+}
+
+@media (max-width: 363px) {
+    .header__h1 {
+        font-size: 1.5rem;
+    }
 }

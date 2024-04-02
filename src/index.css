@@ -14,7 +14,7 @@
   font-weight: 400;
 }
 
-:root > .dark-theme {
+body.dark-theme {
   --bg-color: hsl(207, 26%, 17%);
   --text-color: hsl(0, 0%, 100%);
   --searcing-icon-color: #848484;
