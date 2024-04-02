@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 :root {
   --bg-color: hsl(0, 0%, 98%);
   --text-color: #111517;
@@ -23,13 +25,18 @@
   --button-shadow-color: rgba(0, 0, 0, 0.29);
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
 .container {
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }

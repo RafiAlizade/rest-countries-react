@@ -14,3 +14,21 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
+.header__h1 {
+    color: var(--text-color);
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+}
+
+.change__theme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

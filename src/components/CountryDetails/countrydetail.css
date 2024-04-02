@@ -1,0 +1,151 @@
+.countries__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.search__filter_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.countries__search_input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 25%;
+    box-shadow: 0rem 0.13rem 0.56rem 0rem var(--button-shadow-color);
+}
+
+.search_input__label {
+    color: var(--searcing-icon-color);
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+
+    > input {
+        width: 100%;
+        background-color: var(--input-bg-color);
+        outline: none;
+        border: none;
+        font-family: "Nunito Sans", sans-serif;
+        color: var(--searcing-icon-color);
+    }
+
+    > input::placeholder {
+        font-family: "Nunito Sans", sans-serif;
+        color: var(--searcing-icon-color);
+    }
+}
+
+.app_countries {
+    padding-top: 3rem;
+}
+
+.countries__allbox {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 5rem;
+    column-gap: 8%;
+}
+
+.countries__allbox > a {
+    width: 19%;
+}
+
+.country__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--text-color);
+    box-shadow: 0rem 0rem 0.44rem 0.13rem var(--shadow-color);
+    padding-bottom: 4rem;
+    background-color: var(--bg-color);
+    border-radius: 0.31rem;
+}
+
+.country__image {
+    width: 100%;
+    height: 10.8rem;
+
+    > img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.31rem 0.31rem 0 0;
+    }
+}
+
+.country__name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.country__description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .4rem;
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.countries__filter_input {
+    width: 13%;
+}
+
+.filter_input {
+    width: 100%;
+    position: relative;
+    padding: 1rem 1.5rem;
+    font-family: "Nunito Sans", sans-serif;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 0.31rem;
+    box-shadow: 0rem 0.13rem 0.56rem 0rem var(--button-shadow-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.filter__options {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.filter__option {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.7rem 1.2rem;
+    box-shadow: 0rem 0.13rem 0.56rem 0rem var(--shadow-color);
+    background: var(--bg-color);
+    cursor: pointer;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.d-none {
+    display: none;
+}
+

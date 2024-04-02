@@ -7,7 +7,7 @@ function Navbar() {
             <div className="container">
                 <div className="header__inner">
                     <div className="header__left">
-                        <h2 className="header__h2">Where in the world!</h2>
+                        <h1 className="header__h1">Where in the world!</h1>
                     </div>
 
                     <div className="header__right">
